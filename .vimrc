@@ -240,3 +240,6 @@ nnoremap <S-Left>  <C-w><<CR>
 nnoremap <S-Right> <C-w>><CR>
 nnoremap <S-Up>    <C-w>-<CR>
 nnoremap <S-Down>  <C-w>+<CR>
+
+"sを無効 代替はcl
+nnoremap s <NOP>
