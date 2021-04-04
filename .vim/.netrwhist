@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/richvote/Documents/basic_algo'
+let g:netrw_dirhist_5='/Users/richvote/Documents'
 let g:netrw_dirhist_4='/Users/richvote/dotfiles'
 let g:netrw_dirhist_3='/Users/richvote/dotfiles/.git'
 let g:netrw_dirhist_2='/Users/richvote/dotfiles'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_0='/Users/richvote/dotfiles/.vim/bundle'
 let g:netrw_dirhist_9='/Users/richvote/dotfiles/.vim'
 let g:netrw_dirhist_8='/Users/richvote/dotfiles/.vim/autoload'
 let g:netrw_dirhist_7='/Users/richvote/dotfiles/.vim'
-let g:netrw_dirhist_6='/Users/richvote/dotfiles'
-let g:netrw_dirhist_5='/Users/richvote/dotfiles/.vim'
