@@ -243,3 +243,12 @@ nnoremap <S-Down>  <C-w>+<CR>
 
 "sを無効 代替はcl
 nnoremap s <NOP>
+
+" ESCを二回押すことでハイライトを消す
+nmap <silent> <Esc><Esc> :nohlsearch<CR>
+
+"別ファイルで修正された場合に自動読み込み"
+set autoread
+
+"ビープ音を鳴らないようにする
+set vb t_vb=
