@@ -1,4 +1,4 @@
-" ------------ 文字コードなど
+" -----------cv文字コードなど
 " Vim内部で使う文字コード
 set encoding=utf-8
 
@@ -223,3 +223,20 @@ nnoremap q: <Nop>
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
 endif
+
+" ------------ 深谷追加
+" TABで対応ペアにジャンプ
+nnoremap <Tab> %
+vnoremap <Tab> %
+
+" Ctrl + hjkl でウィンドウ間を移動
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Shift + 矢印でウィンドウサイズを変更
+nnoremap <S-Left>  <C-w><<CR>
+nnoremap <S-Right> <C-w>><CR>
+nnoremap <S-Up>    <C-w>-<CR>
+nnoremap <S-Down>  <C-w>+<CR>

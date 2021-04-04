@@ -1,0 +1,18 @@
+.vimrcをGitで管理(windowsの場合はGit for windowsのBashターミナルを使用する)
+
+cd
+mkdir -p dotfiles
+mv .vimrc dotfiles/
+cd dotfiles
+git init
+git add .vimrc
+git commit -m "Initial vimrc"
+' ln -s ~/dotfiles/.vimrc ~/.vimrc
+mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfiles\.vimrc"
+
+cd ~/dotfiles
+mkdir -p .vim/autoload
+mkdir -p .vim/bundle
+' ln -s ~/dotfiles/.vim ~/.vim
+mklink /D "%USERPEOFILE%\.vim" "%USERPROFILE%\dotfiles\.vim"
+
