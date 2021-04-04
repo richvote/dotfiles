@@ -151,6 +151,7 @@ let g:UltiSnipsSnippetsDir=expand("$HOME/dotfiles/.vim/UltiSnips")
 " ------------ キーマッピング ------------
 " ------------ Leader
 let mapleader=" "
+
 nnoremap \ ,
 
 " ------------ ファイルを開く/閉じる/保存する
