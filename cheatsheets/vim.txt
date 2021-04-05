@@ -1,18 +1,13 @@
-.vimrcをGitで管理(windowsの場合はGit for windowsのBashターミナルを使用する)
-
+"新しいWindows環境にカスタマイズ環境を読み込む
 cd
-mkdir -p dotfiles
-mv .vimrc dotfiles/
+git clone https://github.com/richvote/dotfiles.git
 cd dotfiles
-git init
-git add .vimrc
-git commit -m "Initial vimrc"
-' ln -s ~/dotfiles/.vimrc ~/.vimrc
+git submodule init
+git submodule update
+"管理者権限のコマンドプロンプトで以下を実行
 mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfiles\.vimrc"
+mklink /D "%USERPROFILE%\.vim" "%USERPROFILE%\dotfiles\.vim"
+mklink /D "%USERPROFILE%\vimfiles" "%USERPROFILE%\dotfiles\.vim"
+mklink "%USERPROFILE%\.gvimrc" "%USERPROFILE%\dotfiles\.gvimrc"
 
-cd ~/dotfiles
-mkdir -p .vim/autoload
-mkdir -p .vim/bundle
-' ln -s ~/dotfiles/.vim ~/.vim
-mklink /D "%USERPEOFILE%\.vim" "%USERPROFILE%\dotfiles\.vim"
 
